@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-4">JLuxe Nails</h3>
-            <p className="mb-2">Bringing luxury to your fingertips</p>
+            <p className="mb-2">Bringing luxury to your fingertips.</p>
             <p>&copy; 2024 JLuxe Nails. All rights reserved.</p>
           </div>
           <div className="text-center md:text-left">
