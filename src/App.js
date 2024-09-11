@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
        <Header />
-       <h1 className="text-4xl text-center mt-10">Welcome to JLuxe Nails</h1>
+       {/* <h1 className="text-4xl text-center mt-10">Welcome to JLuxe Nails</h1> */}
        <Hero />
        
       

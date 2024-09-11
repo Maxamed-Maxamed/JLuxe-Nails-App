@@ -9,7 +9,7 @@ function Header() {
         <ul className="flex space-x-4">
           <li><a href="#home" className="text-white hover:text-gray-300">Home</a></li>
           <li><a href="#services" className="text-white hover:text-gray-300">Services</a></li>
-          <li><a href="#contact" className="text-white hover:text-gray-300">Contact</a></li>
+          <li><a href="#contact" className="text-white hover:text-gray-300">Contact</a></li> 
         </ul>
       </nav>
     </header>
