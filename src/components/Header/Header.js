@@ -36,10 +36,10 @@ function Header() {
         <h1 className="text-white text-3xl font-bold font-cursive">JLuxe Nails</h1>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
-            <li><NavLink exact to="/" className="text-white text-lg hover:text-gray-300 transition duration-300">Home</NavLink></li>
-            <li><NavLink to="/services" className="text-white text-lg hover:text-gray-300 transition duration-300">Services</NavLink></li>
+            <li><NavLink exact to="/" className="text-white text-lg font-bold font-cursive  hover:text-gray-300 transition duration-300">Home</NavLink></li>
+            <li><NavLink to="/services" className="text-white text-lg font-bold font-cursive hover:text-gray-300 transition duration-300">Services</NavLink></li>
             {/* <li><NavLink to="/gallery" className="text-white text-lg hover:text-gray-300 transition duration-300">Gallery</NavLink></li> */}
-            <li><NavLink to="/contact" className="text-white text-lg hover:text-gray-300 transition duration-300">Contact</NavLink></li>
+            <li><NavLink to="/contact" className="text-white text-lg font-bold font-cursive hover:text-gray-300 transition duration-300">Contact</NavLink></li>
           </ul>
         </nav>
         <div className="md:hidden">
