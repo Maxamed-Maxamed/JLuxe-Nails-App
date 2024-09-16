@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,13 +35,18 @@ function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <motion.div 
+          className="md:hidden bg-white shadow-lg"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <Link to="home" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Home</Link>
           <Link to="featured-services" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Services</Link>
           <Link to="about-us" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">About</Link>
           <Link to="testimonials" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Testimonials</Link>
           <Link to="contact" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Contact</Link>
-        </div>
+        </motion.div>
       )}
     </header>
   );
