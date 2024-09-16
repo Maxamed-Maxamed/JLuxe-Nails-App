@@ -1,5 +1,5 @@
-// src/components/Header.js
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,11 @@ function Header() {
         <div className="text-2xl font-bold">JLuxe Nails</div>
         <nav>
           <div className="hidden md:flex space-x-8">
-            <a href="/" className="text-gray-600 hover:text-pink-500">Home</a>
-            <a href="/services" className="text-gray-600 hover:text-pink-500">Services</a>
-            <a href="/about" className="text-gray-600 hover:text-pink-500">About</a>
-            <a href="/contact" className="text-gray-600 hover:text-pink-500">Contact</a>
+            <Link to="home" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-pink-500">Home</Link>
+            <Link to="featured-services" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-pink-500">Services</Link>
+            <Link to="about-us" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-pink-500">About</Link>
+            <Link to="testimonials" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-pink-500">Testimonials</Link>
+            <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-pink-500">Contact</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -34,10 +35,11 @@ function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
-          <a href="/" className="block py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Home</a>
-          <a href="/services" className="block py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Services</a>
-          <a href="/about" className="block py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">About</a>
-          <a href="/contact" className="block py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Contact</a>
+          <Link to="home" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Home</Link>
+          <Link to="featured-services" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Services</Link>
+          <Link to="about-us" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">About</Link>
+          <Link to="testimonials" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Testimonials</Link>
+          <Link to="contact" smooth={true} duration={500} className="block cursor-pointer py-2 px-4 text-gray-600 hover:bg-pink-500 hover:text-white">Contact</Link>
         </div>
       )}
     </header>
