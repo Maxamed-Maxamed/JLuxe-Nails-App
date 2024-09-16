@@ -12,8 +12,8 @@ function Contact() {
   };
 
   return (
-    <section className="py-16 px-8">
-      <h1 className="text-4xl text-center mb-8">Contact Us</h1>
+    <section className="py-16 bg-gray-50">
+      <h1 className="text-4xl font-bold text-center mb-8 ">Contact Us</h1>
       <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2">Name</label>
